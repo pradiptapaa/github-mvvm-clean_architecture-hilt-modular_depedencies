@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp"
+    app:cardMaxElevation="16dp"
+    app:contentPadding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/partial_layout_error_iv_error_ic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="32dp"
+            app:srcCompat="@drawable/ic_not_found"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/blank" />
+
+        <TextView
+            android:id="@+id/partial_layout_error_tv_error_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/partial_layout_error_tv_error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textAlignment="center"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/partial_layout_error_btn_error_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_weight="3"
+            android:text="@string/hint_back" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="hint_id">ID:</string>
+    <string name="hint_error_msg_user_not_found">Daftar pengguna dengan keyword \"%1$s\" tidak ditemukan. Silahkan sentuh disini untuk kembali atau ketikkan keyword lain.</string>
+    <string name="hint_error_msg_general">Silahkan cek jaringan Anda dan coba kembali.</string>
+    <string name="hint_error_title_user_not_found">Pencarian Pengguna Bermasalah</string>
+    <string name="hint_error_title_general">Terjadi Kesalahan</string>
+    <string name="hint_back">Coba Lagi</string>
+    <string name="hint_query">Find user (default: pradiptapaa)</string>
+    <string name="hint_search">Search</string>
+    <string name="blank">blank</string>
+    <string name="hint_loading">Loading …</string>
+</resources>
