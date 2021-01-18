@@ -5,6 +5,8 @@ import id.pradiptapaa.github.infrastructure.constant.AppConstant.PAGINATION
 import id.pradiptapaa.user.domain.User
 import id.pradiptapaa.user.usecase.SearchUser
 import retrofit2.HttpException
+import java.io.IOException
+import java.io.InterruptedIOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
@@ -27,6 +29,10 @@ class SearchUserPagingSource (
         } catch (e: SocketTimeoutException){
             LoadResult.Error(e)
         } catch (e: HttpException){
+            LoadResult.Error(e)
+        } catch (e: InterruptedIOException){
+            LoadResult.Error(e)
+        } catch (e: IOException){
             LoadResult.Error(e)
         }
     }
