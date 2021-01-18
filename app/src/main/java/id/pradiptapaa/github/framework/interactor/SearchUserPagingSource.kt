@@ -1,12 +1,10 @@
 package id.pradiptapaa.github.framework.interactor
 
-import android.util.Log
 import androidx.paging.PagingSource
 import id.pradiptapaa.github.infrastructure.constant.AppConstant.PAGINATION
 import id.pradiptapaa.user.domain.User
 import id.pradiptapaa.user.usecase.SearchUser
 import retrofit2.HttpException
-import java.net.SocketException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
